@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h3{
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset >
+            <legend>CHECKOUT</legend>
+            <h2>Items in your bag</h2>
+            <h3><span id="displayProduct"></span></h3>
+            <hr>
+            <label>Enter your username: <input type="text" name="text" placeholder="Type username..." ></label>
+            <label>Enter your email: <input type="email" name="email" placeholder="Type email address..."></label>
+            <label ><input type="submit" value ="SUBMIT ORDER"></label>
+        </fieldset>
+    </form>
+    <script type="text/javascript">
+        let itemPrice = document.querySelector('#displayProduct');
+         itemPrice.innerHTML = localStorage.getItem('price');
+    </script>
+</body>
+</html>

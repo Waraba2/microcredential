@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style media="screen">
+        legend{
+            background-color: rgb(50,50,50);
+            color: white;
+            padding: 0.5em 1em;
+        }
+        fieldset{width:60%}
+        label{display:block; margin-top: 1em;}
+    </style>
+</head>
+<body>
+     <h2>Forms practice</h2>
+    <form action="info.html" method="get">
+        <fieldset>
+            <legend>Fill up the form</legend>
+            <label >Click SUBMIT to send form: <input type="submit" value ="CLICK HERE" onclick="passvalue();"></label>
+            <label for="n">Enter your name: <input type="text" name="fullName" id="n" placeholder="Type your full name..."></label>
+            <hr>
+            <script type="text/javascript">
+                function passvalue(){
+                    let fullN = document.querySelector('#n').value;
+                    localStorage.setItem('full_name',fullN);
+                    return false;
+                }
+            </script>
+            <h3>Check your favorite genre (multiple selection):</h3>
+            <label><input type="checkbox" name="genre" value="rock">Rock</label>
+            <label><input type="checkbox" name="genre" value="hiphop">Hip Hop</label>
+            <label><input type="checkbox" name="genre" value="salsa">Salsa</label>
+            <label><input type="checkbox" name="genre" value="regaeton">Regaeton</label>
+            <hr>
+            <h3>How to like JS</h3>
+            <label><input type="ckeckbox" name="rate" value="" style="display:none;">&#9734;</label>
+            <hr>
+            <h3>Select your age group (one selction:</h3>
+            <input type="radio" name="age" value="18_25">18-25
+            <input type="radio" name="age" value="26_35">26-35
+            <input type="radio" name="age" value="36_50">36-50
+            <input type="radio" name="age" value="50_65">50-65
+            <input type="radio" name="age" value="65_up">65 and up
+            <hr>
+            <h3>Select a trip date:</h3>
+            <label>Pick your vacation's date:<input type="date" name="vacation_date"></label>
+            <hr>
+            <label>Create a password:<input type="password" name='password'></label>
+            <hr>
+            <label>Upload your assignment: <input type="file" name="upload_file" value="UPLOAD"></label>
+            <hr>
+            <label>Enter your email: <input type="email" name="email" ></label>
+            <hr>
+            <label>Find in this website: <input type="search" name="search" placeholder="Search..."></label>
+            <hr>
+            <h3>Do you play any of the following instruments? ONE SELECTION</h3>
+            <select name="instruments"  multiple="multiple">
+                <option value="guitar">GUITAR</option>
+                <option value="piano">PIANO</option>
+                <option value="drums">DRUMS</option>
+                <option value="triangle">TRIANGLE</option>
+                <option value="keyboard">KEYWORD</option>
+            </select>
+            <hr>
+            <h3>What to think about HTML, CSS, and JS?</h3>
+            <textarea name="comments" rows="8" cols="50" placeholder="Type your comment....."></textarea>
+        </fieldset>
+
+    </form>
+</body>
+</html>

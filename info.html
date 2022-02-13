@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display result from form</title>
+</head>
+<body>
+    <h2>Welcome to the program <span id="displayName"></span>!</h2>
+    <a href="venv/index.html">BACK TO FORMS</a>
+
+    <script type="text/javascript">
+        let disName = document.querySelector('#displayName');
+        disName.innerHTML = localStorage.getItem('full_name');
+    </script>
+</body>
+</html>

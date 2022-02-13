@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamidou Ballo - Activity 7</title>
+    <link rel="stylesheet" href="modal.css" type="text/css">
+</head>
+<body>
+<div class="title"> <button onclick="newColor();"><img class= "shop" src="site.png" ></button>
+    <h3>Click Soap</h3>
+    <a class = "ext" href="#home">Home</a>
+    <a class = "ext" href = "https://www.ictsd.org/how-can-company-grow-and-sustain-the-brand-nivea/" target="_blank">News</a>
+    <a class = "ext" href="https://www.niveausa.com/about-us#layer=contact-us" target="_blank">Contact</a>
+    <a class = "ext" href="https://www.niveausa.com/about-us" target="_blank">About</a></div>
+
+
+    <div class="catalog">
+        <div class="product1">
+           <img class="lotion" src="lotion1.jpeg" alt="nivea lotion">
+            <a href="#openModal1" class="link" >Click here</a>
+        </div>
+        <div class="product2">
+           <img class="lotion" src="lotion2.jpeg" alt="nivea lotion">
+            <a href="#openModal2" class="link" >Click here</a>
+        </div>
+        <div class="product3">
+           <img class="lotion" src="lotion3.jpeg" alt="nivea lotion">
+            <a href="#openModal3" class="link" >Click here</a>
+        </div>
+    </div>
+
+
+
+    <div class="modalWindow" id="openModal1">
+        <section class="content">
+            <a href="#"><span class="close">&#10005</span></a>
+            <section class="info">
+                <img src="lotion1.jpeg" alt="nivea lotion">
+                <div class="p">NIVEA LOTION <br><i>Hydrating Body Lotion</i>
+                    <br>
+                    <br>
+                    <hr>
+                    A sweet summer blend of juicy watermelon, pink petals and dewy aloe in our nutrient-
+                    rich, non-greasy lotion;
+                    <hr>
+                    <span>$13.50</span> <b>Now $3.25</b>
+                    <!--<a href="#" class="add">ADD TO BAG</a>-->
+                    <form action="checkout.html" method="get">
+                        <label class="add"><input type="submit" value ="ADD TO CART" onclick="passOrder('n1');"></label>
+                    </form>
+
+                </div>
+            </section>
+        </section>
+    </div>
+    <div class="modalWindow" id="openModal2">
+        <section class="content">
+            <a href="#"><span class="close">&#10005</span></a>
+            <section class="info">
+                <img src="lotion2.jpeg" alt="nivea lotion">
+                <div class="p">NIVEA LOTION <br><i>Radiant & smooth Body Lotion</i>
+                    <br>
+                    <br>
+                    <hr>
+                    A sweet summer blend of juicy watermelon, pink petals and dewy aloe in our nutrient-
+                    rich, non-greasy lotion;
+                    <hr>
+                    <span>$20.99</span> <b>Now $5.99</b>
+                    <!--<a href="#" class="add">ADD TO BAG</a>-->
+                    <form action="checkout.html" method="get">
+                        <label class="add"><input type="submit" value ="ADD TO CART" onclick="passOrder('n2');"></label>
+                    </form>
+
+                </div>
+            </section>
+        </section>
+    </div>
+    <div class="modalWindow" id="openModal3">
+        <section class="content">
+            <a href="#"><span class="close">&#10005</span></a>
+            <section class="info">
+                <img src="lotion3.jpeg" alt="nivea lotion">
+                <div class="p">NIVEA LOTION <br><i>Nourishing Body Lotion</i>
+                    <br>
+                    <br>
+                    <hr>
+                    A sweet summer blend of juicy watermelon, pink petals and dewy aloe in our nutrient-
+                    rich, non-greasy lotion;
+                    <hr>
+                    <span>$23.99</span> <b>Now $7.99</b>
+                    <!--<a href="#" class="add">ADD TO BAG</a>-->
+                    <form action="checkout.html" method="get">
+                        <label class="add"><input type="submit" value ="ADD TO CART" onclick="passOrder('n3');"></label>
+                    </form>
+
+                </div>
+            </section>
+        </section>
+    </div>
+    <div class="modalWindow" id="openModal4">
+        <section class="content">
+            <a href="#"><span class="close">&#10005</span></a>
+            <section class="info">
+                <img src="lotion4.jpeg" alt="nivea lotion">
+                <div class="p">NIVEA LOTION <br><i>Shea Moisture Body Lotion</i>
+                    <br>
+                    <br>
+                    <hr>
+                    A sweet summer blend of juicy watermelon, pink petals and dewy aloe in our nutrient-
+                    rich, non-greasy lotion;
+                    <hr>
+                    <span>$55.99</span> <b>Now $33.99</b>
+                    <!--<a href="#" class="add">ADD TO BAG</a>-->
+                    <form action="checkout.html" method="get">
+                        <label class="add"><input type="submit" value ="ADD TO CART" onclick="passOrder('n4');"></label>
+                    </form>
+
+                </div>
+            </section>
+        </section>
+    </div>
+    <div class="moreCont"><button class="more" onclick="addMore();" this.onclick=null;>SEE MORE PRODUCTS</button></div>
+    <div class="footer">
+        <h5 style="text-decoration: underline" >Social</h5>
+        <div class="soc">
+            <a class="scolink" href="https://www.facebook.com/NIVEA/?brand_redir=116098045125668" ><img class="img1" src="facebook.jpeg"><span>FACEBOOK</span></a>
+            <a class="scolink" href="https://www.instagram.com/niveausa/"><img class="img1" src="insta.jpeg"><span>INSTAGRAM</span></a>
+        </div>
+
+
+        <div class="soc">
+            <h5>Copy rights (c) Hamidou Ballo</h5>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let nivea1 = 3.25;
+        let nivea2 = 5.99;
+        let nivea3 = 7.99;
+        let nivea4 = 33.99;
+        function passOrder(symbole){
+            if(symbole == 'n1') {
+                let output = `NIVEA BODY LOTION.......... $${nivea1}`;
+                localStorage.setItem('price',output);
+                return false;
+            } else if(symbole == 'n2') {
+                let output = `NIVEA BODY LOTION.......... $${nivea2}`;
+                localStorage.setItem('price',output);
+                return false;
+            } else if(symbole == 'n3') {
+                let output = `NIVEA BODY LOTION.......... $${nivea3}`;
+                localStorage.setItem('price',output);
+                return false;
+            } else if(symbole == 'n4') {
+                let output = `NIVEA BODY LOTION.......... $${nivea4}`;
+                localStorage.setItem('price',output);
+                return false;
+            }
+
+
+        }
+        function newColor(){
+            let p = document.querySelectorAll('.ext');
+            for (var i=2; i < p.length; i++){
+                p[i].style.backgroundColor = '#F9AA33';
+            }
+
+        }
+            clicked = false;
+        function addMore(){
+            if(!clicked){
+                let x = document.createElement('div');
+            x.className="product4";
+            let x2 = document.createElement('img');
+            x2.className = "lotion";
+            x2.src ="lotion4.jpeg";
+            let x3 = document.createElement('a');
+            x3.className = "link";
+            x3.innerText = "Click Here";
+            x3.href = "#openModal4"
+            x.append(x2);
+            x.append(x3);
+
+            let y = document.querySelector('.catalog');
+            y.append(x);
+            clicked = true;
+            }
+        }
+
+
+    </script>
+</body>
+</html>
